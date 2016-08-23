@@ -1,0 +1,346 @@
+/*
+ Theme Name:   WCD Baby Sixteen
+ Theme URI:    https://www.webcodesigns.com
+ Description:  Child theme for TwentySixteen
+ Author:       Kristy Hatswell
+ Author URI:   https://www.webcodesigns.com
+ Template:     twentysixteen
+ Version:      1.0.0
+ Tags:        one-column, two-columns, right-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready, blog
+ Text Domain:  wcdbabysixteen
+*/
+
+/*
+======================= Table of Contents =======================
+   # 1.0 Clean up parent theme styles
+
+*/
+
+/*
+------- # 1.0 Clean up parent theme styles ------
+*/
+
+/* Remove standard black border*/
+
+body {
+    background: none;
+}
+
+/* Remove color so body color shows through*/
+
+.site {
+    margin: 0;
+    background-color: transparent;
+}
+
+.site-header {
+    padding: 0 0 0.5em;
+    background-color: #1a1a1a;
+    text-align: center;
+}
+
+.site-branding {
+    padding-top: 0.5em;
+    margin: 0;
+    color: #fff;
+}
+
+.site-branding .site-title a,
+.site-description {
+    color: #fff;
+}
+
+.site-content {
+    padding-top: 20px;
+}
+
+/* Main Menu styling */
+
+.menu-toggle {
+    color: #fff;
+    margin: 0;
+    padding: 5px;
+    border: none;
+}
+
+.menu-toggle .genericon-menu {
+    font-size: 2em;
+}
+
+.menu-toggle.toggled-on,
+.menu-toggle.toggled-on:hover,
+.menu-toggle.toggled-on:focus {
+    background-color: #fff;
+    border-color: #1a1a1a;
+    color: #1a1a1a;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+    background-color: #fff;
+    border-color: #1a1a1a;
+    color: #1a1a1a;
+}
+
+.main-navigation li {
+    text-align: left;
+    border-top: 1px dotted #fff;
+}
+
+.main-navigation li a {
+    color: #fff;
+}
+
+.main-navigation .dropdown-toggle {
+    color: #fff;
+}
+
+.dropdown-toggle:after {
+    border-left: 1px dotted #fff;
+}
+
+.site-header-menu {
+    padding: 2em;
+}
+
+/* Adjust img basic styling */
+
+img {
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+/* Change basic style of widgets */
+
+.widget ul {
+    list-style: none;
+}
+
+.widget ul li:before{
+    font-family: "Genericons";
+    font-size: 10px;
+    content: "\f501";
+}
+
+.widget {
+    border-top: 2px solid #1a1a1a;
+    line-height: 2.5em;
+    padding: 1em;
+}
+
+.widget a {
+    color: #1a1a1a;
+}
+
+/* Adjust pagination nav-links styling */
+
+.pagination:before,
+.pagination:after {
+    background-color: transparent;
+}
+
+.page-numbers {
+    color: #1a1a1a;
+    text-decoration: underline;
+}
+
+.next.page-numbers,
+.prev.page-numbers,
+.page-numbers.current {
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
+.pagination .prev,
+.pagination .next {
+    background-color: transparent;
+    border: 2px solid #1a1a1a;
+}
+
+.pagination .prev:before,
+.pagination .next:before {
+    left: -3px;
+    top: -3px;
+}
+
+.pagination .prev:hover,
+.pagination .prev:focus,
+.pagination .next:hover,
+.pagination .next:focus {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.pagination .nav-links {
+    margin-top: 4px;
+}
+
+.entry-content a,
+.entry-summary a,
+.taxonomy-description a,
+.logged-in-as a,
+.comment-content a,
+.pingback .comment-body > a,
+.textwidget a,
+.entry-footer a:hover,
+.site-info a:hover {
+    box-shadow: none;
+}
+
+.page-links a {
+    background-color: transparent;
+    border-color: #1a1a1a;
+    color: #1a1a1a;
+    border-radius: 0;
+}
+
+.page-links a:hover,
+.more-link:hover {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.social-navigation a {
+    color: #fff;
+    border: none;
+}
+
+.social-navigation a:before {
+    font-size: 20px;
+}
+
+/* Style some buttons */
+
+.more-link {
+    padding: 8px;
+    border: 2px solid #1a1a1a;
+    text-decoration: none;
+    box-shadow: none;
+    color: #1a1a1a;
+}
+
+button,
+button[disabled]:hover,
+button[disabled]:focus,
+input[type="button"],
+input[type="button"][disabled]:hover,
+input[type="button"][disabled]:focus,
+input[type="reset"],
+input[type="reset"][disabled]:hover,
+input[type="reset"][disabled]:focus,
+input[type="submit"],
+input[type="submit"][disabled]:hover,
+input[type="submit"][disabled]:focus {
+   background: #fff;
+    border: 2px solid #1a1a1a;
+    border-radius: 0;
+    color: #1a1a1a;
+    font-family: Montserrat, "Helvetica Neue", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.84375em 0.875em 0.78125em;
+    text-transform: uppercase;
+}
+
+button:hover,
+button:focus, input[type="button"]:hover,
+input[type="button"]:focus,
+input[type="reset"]:hover,
+input[type="reset"]:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+    background: #1a1a1a;
+    color: #fff;
+}
+
+.site-footer {
+    min-height: 120px;
+    padding: 1em;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.design-credits-wrapper {
+    color: #fff;
+}
+
+.site-info {
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+.site-info a {
+    color: #fff;
+}
+
+.social-navigation-footer {
+    right: 4em;
+    position: absolute;
+}
+
+.comments-title,
+.comment-reply-title,
+.pagination {
+    border-top: 2px solid #1a1a1a;
+}
+
+.post-navigation {
+    border-top: 2px solid #1a1a1a;
+    border-bottom: 2px solid #1a1a1a;
+}
+
+.post-navigation div + div {
+    border-top: 2px solid #1a1a1a;
+}
+
+/* Media queries to adjust the styles listed above for larger screens */
+
+@media screen and (min-width: 56.875em) {
+    .site-header {
+        height: 80px;
+        width: 100%;
+        position: fixed; /* Fix header to top of screen on larger screens */
+        z-index: 100;
+    }
+
+    .site-header-menu {
+        margin-top: 0;
+        margin-right: 2em;
+        padding: 0;
+        float: right;
+    }
+
+    .site-branding {
+        padding: 1em 2em;
+        float: left;
+        color: #fff;
+    }
+
+    .main-navigation ul ul li {
+        background-color: #000;
+    }
+
+    .main-navigation ul ul:before,
+    .main-navigation ul ul:after {
+        border-style: none;
+        position: absolute;
+    }
+
+    .main-navigation ul ul:before {
+        border-color: #000 transparent;
+        border-width: 0 10px 10px;
+        right: 9px;
+        top: -9px;
+    }
+
+    .site-content {
+        padding-top: 120px; /* Menu height + 40px */
+    }
+}
