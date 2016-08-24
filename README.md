@@ -1,5 +1,7 @@
 # wcdbabysixteen
-A child theme for the "twentysixteen" WordPress theme by the WordPress Team. 
+A child theme for the "twentysixteen" WordPress theme by the WordPress Team.
+
+[Screenshot of WCD Baby Sixteen](screenshot.png)
 
 == Description ==
 
