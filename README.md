@@ -1,12 +1,17 @@
 # wcdbabysixteen
-A child theme for the "twentysixteen" WordPress theme by Automatic. 
+A child theme for the "twentysixteen" WordPress theme by the WordPress Team. 
 
 == Description ==
+
 Child theme for TwentySixteen. 
 WCD Baby Sixteen has added basic yet stylish flat buttons, and a more delicate feel without the bold lines and borders 
 present in the original Twenty Sixteen theme.
+On desktop the main navigation bar is sticky, mobile menu "hamburger" button moved to centre of the screen for improved UI experience for left/right handed users.
+When custom logo is added, both the site title and description are removed from the header navigation bar.
+Footer copyright text is dynamic for the site and date. Is also now centred and discretely located at the very bottom of the page.
 
 == Important Note ==
+
 This theme is a child theme, which means that it is reliant upon another theme in order to function correctly.
 In this case you must have the WordPress theme "Twenty Sixteen" installed in you content/themes folder. However, when activating
 the theme (as detailed below) you must activate the child theme - in this case "WCD Baby Sixteen".
